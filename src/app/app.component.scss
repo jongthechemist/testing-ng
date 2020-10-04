@@ -1,0 +1,8 @@
+.App {
+  padding: 80px;
+}
+::ng-deep .ProductCreate form {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-gap: 20px;
+}

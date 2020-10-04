@@ -1,0 +1,15 @@
+<div class="ProductCreate">
+  <button (click)="showForm = true">Add Product</button>
+  <ng-container *ngIf="showForm">
+    <h1>Product Create</h1>
+    <form>
+      <label for="code">Code</label>
+      <input id="code" [(ngModel)]="code" />
+      <label for="name">Name</label>
+      <input id="name" [(ngModel)]="name" />
+      <label for="description">Description</label>
+      <textarea id="description" [(ngModel)]="description"></textarea>
+      <button type="button" (click)="onSubmit()">Submit</button>
+    </form>
+  </ng-container>
+</div>

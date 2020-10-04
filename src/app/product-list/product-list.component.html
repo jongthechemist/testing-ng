@@ -1,0 +1,10 @@
+<div>
+  <h1>Product List</h1>
+  <h2 *ngIf="service.error | async">Something went wrong: {{service.error | async}}</h2>
+  <ul>
+    <li *ngFor="let product of service.products | async">
+      <strong>{{ product.name }} : </strong>
+      {{ product.description }}
+    </li>
+  </ul>
+</div>
